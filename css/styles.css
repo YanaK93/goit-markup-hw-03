@@ -11,12 +11,37 @@
   --iris-color: #4D5AE5;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   background: var(--first-title-color);
 }
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
+  box-sizing: border-box;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center; 
 }
 
 .header-logo {
@@ -24,7 +49,9 @@ body {
 }
 
 .header-navigation {
-
+display: flex;
+align-items: center;
+margin-right: auto;
 }
 
 .logo {
@@ -36,12 +63,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--subheader-color);
+  margin-right: 76px;
 }
 
 .sub-header {
-
-
   background: var(--subheader-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .sub-header-text {
@@ -51,13 +79,20 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--first-title-color);
+  margin-bottom: 48px;
+  width: 496px;
+  height: 120px;
+left: 473px;
+top: 260px;
+position: absolute;
 }
 
 .header-list {
-
+display: flex;
 }
+
 .header-item {
- 
+  display: flex;
 }
 
 .header-link {
@@ -67,6 +102,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--subheader-color);
   text-decoration: none;
+  margin-right: 40px;
 }
 
 .header-mail {
@@ -74,6 +110,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  display: flex;
+  margin-right: 40px;
 }
 
 .header-tel {
@@ -82,13 +120,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
-
   letter-spacing: 0.02em;
-
-  /* SLATE */
-
   color: var(--slate-color);
+  display: flex;
 }
 
 .btn {
@@ -100,12 +134,20 @@ body {
 
 .btn-service {
   cursor: pointer;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-
   color: var(--first-title-color);
+  Padding: 16px, 32px, 16px, 32px;
+  Gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
+width: 169px;
+height: 56px;
+left: 636px;
+top: 428px;
 }
 
 
@@ -113,12 +155,11 @@ body {
   background: var(--cloud-color);
   border: 1px solid var(--another-color);
   border-radius: 4px;
-  
+  padding: 12px 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   color: var(--iris-color);
   cursor: pointer;
 }
@@ -155,6 +196,8 @@ body {
 
 .list {
   list-style: none;
+  display: flex;
+  margin-left: auto;
 }
 
 .link {
@@ -178,9 +221,12 @@ body {
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
-
+  padding-top: 16px;
+  padding-bottom: 100px;
   letter-spacing: 0.02em;
   color: var(--another-color);
+  width: 264px;
+  
 }
 
 .footer-logo {
@@ -192,18 +238,23 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--cloud-color);
+  
 }
 
 .footer-logo-span {
   color: var(--header-color);
+  
 }
 
 footer {
   background: var(--subheader-color);
+  padding-top: 100px;
 }
 
 .our-team {
   background-color: var(--cloud-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .our-team-list-item {
@@ -231,10 +282,11 @@ footer {
 
 
 .options-link {
-  display: block;
+  display: flex;
   color: var(--first-title-color);
   text-align: center;
   text-decoration: none;
+  flex-direction: column;
 }
 
 .features li {
@@ -265,9 +317,18 @@ footer {
 }
 
 .portfolio-filter-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+  padding-top: 96px;
 }
 
 .options {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 
@@ -277,17 +338,27 @@ footer {
   line-height: 1.2;
   text-align: center;
   color: var(--subheader-color);
+  margin-bottom: 8px;
 }
 
 .options-paragraph {
   text-align: center;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
+
+.projects-content {
+  padding: 32px 0 32px 16px;
+  border-right: 0.5px solid #f4f4fd;
+  border-bottom: 0.5px solid #f4f4fd;
+  border-left: 0.5px solid #f4f4fd;
+  
+  
+}
+
 
 .visually-hidden { 
   position: absolute; 
@@ -301,3 +372,18 @@ footer {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
