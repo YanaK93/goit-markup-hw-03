@@ -70,21 +70,21 @@ margin-right: auto;
   background: var(--subheader-color);
   padding-top: 188px;
   padding-bottom: 188px;
+  padding-left: 473px;
+  padding-right: 473px;
+  flex-grow: 1;
+  margin: 0 auto;
 }
 
 .sub-header-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   text-align: center;
+  letter-spacing: 0.01em;
   color: var(--first-title-color);
-  margin-bottom: 48px;
-  width: 496px;
-  height: 120px;
-left: 473px;
-top: 260px;
-position: absolute;
 }
 
 .header-list {
@@ -138,16 +138,10 @@ display: flex;
   font-size: 16px;
   line-height: 1.18;
   color: var(--first-title-color);
-  Padding: 16px, 32px, 16px, 32px;
-  Gap: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  position: absolute;
-width: 169px;
-height: 56px;
-left: 636px;
-top: 428px;
+  width: 169px;
+  height: 56px;
+  margin-top: 48px;
+  margin-left: 163px;
 }
 
 
@@ -175,6 +169,7 @@ top: 428px;
 }
 
 .what-we-are-doing-title {
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -183,7 +178,16 @@ top: 428px;
   color: var(--subheader-color);
 }
 
+.what-we-are-doing-list {
+  margin-top: 72px;
+}
+
+.what-we-are-doing-list-item {
+  padding-right: 24px;
+}
+
 .our-team-title {
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -252,13 +256,17 @@ footer {
 }
 
 .our-team {
-  background-color: var(--cloud-color);
-  padding-top: 120px;
+  padding-top: 120px;  
   padding-bottom: 120px;
+}
+
+.our-team-section {
+  background-color: var(--cloud-color);  
 }
 
 .our-team-list-item {
   background-color: var(--list-item-color);
+  margin-right: 24px;
 
 }
 
@@ -282,6 +290,7 @@ footer {
 
 
 .options-link {
+  outline: var(--another-color) solid 1px;
   display: flex;
   color: var(--first-title-color);
   text-align: center;
@@ -312,8 +321,13 @@ footer {
   text-decoration: none;
 }
 
+.section-wrapper {
+  margin: 120px 156px 0px 156px
+
+}
+
 .main-portfolio-section {
-  
+  margin-bottom: 120px;
 }
 
 .portfolio-filter-menu {
@@ -333,6 +347,7 @@ footer {
 
 
 .options-header {
+  margin-top: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -342,6 +357,8 @@ footer {
 }
 
 .options-paragraph {
+  margin-top: 8px;
+  margin-bottom: 32px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -374,9 +391,7 @@ footer {
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1440px;
   outline: 1px;
   margin: 0 auto;
 }
