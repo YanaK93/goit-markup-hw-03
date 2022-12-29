@@ -339,6 +339,7 @@ footer {
   letter-spacing: 0.02em;
   color: var(--slate-color);
   width: 264px;
+  margin-top: 8px;
 }
 
 .link-no-decoration {
